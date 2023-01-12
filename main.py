@@ -7,8 +7,7 @@ from PIL import Image
 import tensorflow as tf
 
 app = FastAPI()
-
-CNN = tf.keras.models.load_model("./models/1/potatoesvA.hdf5")# load the pre trained model we saved
+CNN = tf.keras.models.load_model("./models/potatoesvA.hdf5")# load the pre trained model we saved
 CLASS_NAME = ["early blight", "late blight", "healthy"]
 
 
